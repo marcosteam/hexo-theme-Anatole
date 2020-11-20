@@ -249,7 +249,7 @@ a:hover, a:active {
   font-size: 28px;
   line-height: 1;
   font-weight: 600;
-  color: #5f5f5f;
+
 }
 .post .post-title h3 {
   text-transform: uppercase;
@@ -265,9 +265,6 @@ a:hover, a:active {
   letter-spacing: 1px;
   color: #ffffff;
 }
-.post .post-title a:hover {
-  color: #525252;
-}
 .post .post-content a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -277,12 +274,12 @@ a:hover, a:active {
   color: #2F69B3;
 }
 .post .post-content h3 {
-  color: #5F5F5F;
+  color: #f2f2f2;
   font-size: 22px;
   font-weight: 600;
 }
 .post .post-content h4 {
-  color: #5F5F5F;
+  color: #f2f2f2;
   font-size: 16px;
 }
 .post .post-footer {

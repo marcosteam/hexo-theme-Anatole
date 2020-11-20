@@ -7,6 +7,8 @@ mixin make_post(item, is_detail)
 				else
 					a(href= url_for(item.path))= item.title
 		if is_detail
+			br
+			span= "文章共计 " + wordcount(page.content) + " 字，大约需要 " + min2read(page.content) + " 分钟"
 			.post-content!= item.content
 		else
 			.post-content
@@ -16,7 +18,7 @@ mixin make_post(item, is_detail)
 			.info
 				i.fa.fa-sun-o
 				span.date= date(item.date, 'YYYY-MM-DD')
-				if theme.duoshuo || theme.disqus
+				if theme.duoshuo || theme.disqus	
 					i.fa.fa-comment-o
 					a(href= url_for(item.path + "#comments"))= __('Comments')
 				if item.tags

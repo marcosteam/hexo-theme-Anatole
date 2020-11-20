@@ -5,7 +5,7 @@
   border-left: 4px solid #f66;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  background-color: #424242
+  background-color: #A39BA8
 }
 
 .post-content .tip br {
@@ -20,12 +20,12 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  color: #424242;
+  color: #632e2e;
   font-size: 14px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
-  background-color: #424242;
+  background-color: #f66;
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
 }
 

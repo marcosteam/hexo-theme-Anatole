@@ -21,11 +21,16 @@
       else
         a(href="/links")= __('Links')		
   .information
-    .back_btn
+    .nav_right_btn
+      li
+        if is_post()
+          a.fa.fa-bars(onclick="toggleTocButton()")
       li
         if is_post()
           a.fa.fa-chevron-left(onclick="window.history.go(-1)") 
         else
-          a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;") 
-    .avatar
-      img(src=theme.avatar)
+          a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;")
+  if is_post()
+    #toc_block
+      p(style={"text-align": "center"}) 文章目录
+      !=toc(page.content,{list_number:false})

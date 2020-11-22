@@ -5,7 +5,7 @@
   border-left: 4px solid #f66;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  background-color: #A39BA8
+  background-color: #424242
 }
 
 .post-content .tip br {
@@ -40,7 +40,6 @@
 
 pre {
   font-size: 0.8em!important;
-  background-color: #f8f8f8!important;
   font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
 }
 
@@ -285,10 +284,13 @@ dl dt {
       padding: 0; }
 
       blockquote {
-        box-sizing: border-box;
-        margin: 1.6em 0 1.6em -2.2em;
-        padding: 0 0 0 1.6em;
-        border-left: #4a4a4a 0.4em solid; }
+        position: relative;
+        margin: 2em 0;
+        padding: 12px 24px 12px 30px;
+        border-left: 4px solid #4a4a4a;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: #424242}
 
         blockquote p {
           margin: 0.8em 0; }
@@ -313,12 +315,11 @@ dl dt {
 
                     code, tt {
                       padding: 1px 3px;
-                      font-family: Inconsolata, monospace, sans-serif;
+                      font-family: "Fira Mono";
                       font-size: 0.85em;
                       white-space: pre-wrap;
-                      border: 1px solid #E3EDF3;
                       background: #424242;
-                      color: #d14;
+                      color: rgba(255, 255, 255, 0.7);                      ;                      ;
                       border-radius: 2px; }
 /**
                       pre {
@@ -404,65 +405,6 @@ dl dt {
                                                     font-size: 12px; }
 **/
 
-.toc {
-  border: 1px solid #f0f0f0;
-  margin-bottom: 20px;
-  padding: 10px 30px; }
-
-  #fb_comments_container {
-    overflow: hidden;
-    margin: 0 auto; }
-    #fb_comments_container #fb_comments {
-      list-style-type: none;
-      padding: 0; }
-      #fb_comments_container #fb_comments h1 {
-        font-size: 1.3em; }
-        #fb_comments_container #fb_comments h2 {
-          font-size: 1.2em; }
-          #fb_comments_container #fb_comments h3 {
-            font-size: 1.1em; }
-            #fb_comments_container #fb_comments h4, #fb_comments_container #fb_comments h5,
-            #fb_comments_container #fb_comments h6 {
-              font-size: 1.05em; }
-              #fb_comments_container #fb_comments .comment {
-                position: relative;
-                padding: 25px 0;
-                border-bottom: 1px solid rgba(150, 150, 150, 0.2);
-                *border-bottom: 1px solid #f0f0f0; }
-                #fb_comments_container #fb_comments .comment .avatar {
-                  position: absolute;
-                  top: 25px;
-                  left: 0;
-                  width: 50px;
-                  float: left; }
-                  #fb_comments_container #fb_comments .comment .avatar img {
-                    width: 48px;
-                    border: none;
-                    border-radius: 5px;
-                    margin: 0; }
-                #fb_comments_container #fb_comments .comment .comment_body,
-                #fb_comments_container #fb_comments .comment .c_content {
-                  margin-left: 70px;
-                  display: block; }
-                  #fb_comments_container #fb_comments .comment .comment_body p,
-                  #fb_comments_container #fb_comments .comment .c_content p {
-                    margin: 5px 0 15px 0;
-                    padding: 0;
-                    line-height: 1.8; }
-                    #fb_comments_container #fb_comments .comment .comment_body .author,
-                    #fb_comments_container #fb_comments .comment .c_content .author {
-                      line-height: 1.5em;
-                      margin: 0;
-                      padding: 0; }
-                      #fb_comments_container #fb_comments .comment .comment_body .author b,
-                      #fb_comments_container #fb_comments .comment .c_content .author b {
-                        color: #555; }
-                        #fb_comments_container #fb_comments .comment .comment_body .author small,
-                        #fb_comments_container #fb_comments .comment .c_content .author small {
-                          font-weight: normal;
-                          padding-left: 10px;
-                          font-size: 0.7em;
-                          color: #666; }
 
 #fb_new_comment {
   padding-bottom: 50px; }

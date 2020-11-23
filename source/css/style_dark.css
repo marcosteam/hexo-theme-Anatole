@@ -147,9 +147,8 @@ a:hover, a:active {
   color: #4786D6;
 }
 .page-top .nav a.current {
-  color: #5A5A5A;
   padding-bottom: 22px;
-  border-bottom: 1px solid #5A5A5A;
+  border-bottom: 1px solid #fff;
 }
 .page-top .information {
   float: right;
@@ -193,7 +192,7 @@ a:hover, a:active {
 }
 .sidebar .logo-title .description {
   font-size: 14px;
-  color: #565654;
+  color: rgba(255, 255, 255, 0.60);
 }
 .sidebar .logo-title .logo {
   margin: 0 auto;
@@ -284,7 +283,7 @@ a:hover, a:active {
 }
 .post .post-footer {
   padding: 0 0 30px 0;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #616161;
 }
 .post .post-footer .meta {
   max-width: 100%;
@@ -418,7 +417,7 @@ a:hover, a:active {
 }
 .list-with-title .listing-title {
   font-size: 24px;
-  color: #666666;
+  color: #fff;
   font-weight: 600;
   line-height: 2.2em;
 }
@@ -430,13 +429,13 @@ a:hover, a:active {
 }
 .list-with-title .listing .listing-post .post-time {
   float: right;
-  color: rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.80);
 }
 .list-with-title .listing .listing-post a {
-  color: #8F8F8F;
+  color: #fff;
 }
 .list-with-title .listing .listing-post a:hover {
-  color: #4786D6;
+  color: #8F8F8F;
 }
 
 /* share */

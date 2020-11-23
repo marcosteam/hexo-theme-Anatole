@@ -3,7 +3,7 @@ mixin make_post(item, is_detail)
 		.post-title
 			h3
 				if is_detail
-					a= item.title
+					= item.title
 				else
 					a(href= url_for(item.path))= item.title
 		if is_detail

@@ -1,0 +1,11 @@
+extends partial/layout
+
+block site_title
+  != '搜索 · ' + config.title
+
+block description
+  - var desc = '搜索页面 - ' + config.title;
+    meta(name="description", content=desc)
+
+block content
+  != list_tags(site.tags)

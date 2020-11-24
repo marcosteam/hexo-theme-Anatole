@@ -10,7 +10,14 @@ block description
 block content
   .autopagerize_page_element: .content
     .archive.animated.fadeInDown
-      ul.list-with-title
+      div(style={
+      display: "flex",
+      margin:"auto 30px",
+      "align-items": "baseline",
+      })
+        h3= page.tag
+        span(style={'margin-left': '30px'})= '共 ' + (Object.keys(page.posts).length - 1) +' 篇文章等待发掘...'
+      ul(style={margin:"0px 30px"}).list-with-title
         include mixins
         +postList()
         +make_pager(__('prev'), __('next'))

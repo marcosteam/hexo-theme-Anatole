@@ -34,7 +34,7 @@ a:link, a:visited {
   -o-transition: all .15s linear;
   -ms-transition: all .15s linear;
   transition: all .15s linear;
-  color: #303030;
+  color: #fff;
 }
 
 a:hover, a:active {
@@ -226,7 +226,7 @@ a:hover, a:active {
   line-height: 0;
 }
 .sidebar .social-links a {
-  color: #565654;
+  color: #fff;
 }
 .sidebar .social-links a:hover {
   color: #4786D6;
@@ -721,4 +721,14 @@ a.btn {
 .toc-link:hover {
   background-color:rgba(255, 255, 255, 0.08);
   border-radius: 5px;
+}
+
+/* 搜索页标签样式 */
+.tag-list {
+  list-style-type: none;
+  display: flex;
+  ;
+}
+.tag-list-item {
+  margin: 0.8rem;
 }

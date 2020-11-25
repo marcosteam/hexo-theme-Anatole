@@ -8,4 +8,5 @@ block description
     meta(name="description", content=desc)
 
 block content
-  != list_tags(site.tags)
+  .autopagerize_page_element.content.post-page.animated.fadeInDown
+    !=list_tags(site.tags,{show_count: false})

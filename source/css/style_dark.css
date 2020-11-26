@@ -537,7 +537,7 @@ a:hover, a:active {
 
 /* 按钮样式 */
 a.btn {
-  color: #868686;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -545,17 +545,18 @@ a.btn {
   display: inline-block;
   position: relative;
   outline: 0;
-  color: rgba(0, 0, 0, 0.44);
+  color: #fff;
   background: transparent;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #fff;
   white-space: nowrap;
   font-weight: 400;
   font-style: normal;
   border-radius: 999em;
+  padding: 0.5em 1.25em;
 }
 
 .btn:hover {

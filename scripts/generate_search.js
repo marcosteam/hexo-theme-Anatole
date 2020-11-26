@@ -1,3 +1,4 @@
+
 // Generate search page
 hexo.extend.generator.register('searchPage', function(locals){
     return {

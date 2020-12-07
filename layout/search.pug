@@ -10,25 +10,32 @@ block description
 
 
 block content
-  .autopagerize_page_element.content.post-page.animated.fadeInDown
-    h3 内容搜索
-    form(style={display: "flex",
-    "align-items": "center",
-    "justify-content": "center",
-    })
-      input(type="text", 
-      name="search_info",
-      id="search_input", 
-      placeholder="请输入搜索字符，多个搜索词请使用空格分词提高搜索概率", 
-      required,
-      style={
-        padding: "10px",
-        border: none,
-        "border-radius": "10px",
-        width: "80%",
-        "margin-right": "10px",
-      })
-      button(type="submit",class="btn") 提交
+  .content.animated.fadeInDown
+    .post
+      h3 内容搜索
+      form(onsubmit="return inpSearch();")
+        input(type="text", 
+        name="s",
+        id="search-input", 
+        placeholder="请输入搜索字符，多个搜索词请使用空格分词提高搜索概率", 
+        required,
+        style={
+          padding: "10px",
+          "border-radius": "10px",
+          width: "80%",
+          "margin-right": "10px",
+        })
+        button(type="submit",class="btn") 提交
 
-    h3 标签查找
-    !=list_tags(site.tags,{show_count: false})
+      #search-notice
+      
+      #result-posts
+
+      script.
+        var searchDataFile = "#{config.root}"+"#{theme.search.path || 'search.json'}"
+
+      script(src= url_for('/js/localsearch.js'))
+
+      #tag_block
+        h3 标签查找
+        !=list_tags(site.tags,{show_count: false})

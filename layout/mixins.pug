@@ -7,10 +7,11 @@ mixin make_post(item, is_detail)
 				else
 					a(href= url_for(item.path))= item.title
 		if is_detail
-			br
-			span= "文章共计 " + wordcount(page.content) + " 字，大约需要 " + min2read(page.content) + " 分钟"
+			if is_post()
+				br
+				span= "文章共计 " + wordcount(page.content) + " 字，大约需要 " + min2read(page.content) + " 分钟"
 			.post-content!= item.content
-		else
+		else 
 			.post-content
 				- var summary = item.summary || item.content
 				p!= truncate(strip_html(summary), {length: 160})

@@ -10,6 +10,13 @@ block description
 block content
     .autopagerize_page_element: .content
       .archive.animated.fadeInDown
+        .list-with-title 
+          h3 文章目录
+          .listing(style="margin: 0.4em auto")
+            each data in site.categories.data
+              a.btn(role="category",href=url_for(data.path),style="margin-right: 10px").
+                #{data.name}#[span(style="margin-left: 15px")=data.length]
+        h3(style="margin:0 30px") 年份归档
         ul.list-with-title
           include mixins
           +postList()

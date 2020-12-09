@@ -10,6 +10,8 @@ block description
 block content
   .autopagerize_page_element: .content
     .archive.animated.fadeInDown
+      .list-with-title 
+        h3 分类：#{page.category}       #[span 共 #{page.posts.length} 篇文章等待发掘...]
       ul.list-with-title
         include mixins
         +postList()

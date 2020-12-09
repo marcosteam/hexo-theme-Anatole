@@ -11,15 +11,15 @@
       else
         a(href="/archives")= __('Archive')
     li
-      if is_current('about')
-        a.current(href="/about")= __('About')			
-      else
-        a(href="/about")= __('About')
-    li
       if is_current('search')
         a.current(href='/search')= __('Search')
       else
         a(href="/search")= __("Search")
+    li
+      if is_current('about')
+        a.current(href="/about")= __('About')			
+      else
+        a(href="/about")= __('About')
     li
       if is_current('links')
         a.current(href="/links")= __('Links')					

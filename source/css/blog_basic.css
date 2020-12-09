@@ -40,7 +40,6 @@
 
 pre {
   font-size: 0.8em!important;
-  background-color: #f8f8f8!important;
   font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
 }
 
@@ -285,10 +284,13 @@ dl dt {
       padding: 0; }
 
       blockquote {
-        box-sizing: border-box;
-        margin: 1.6em 0 1.6em -2.2em;
-        padding: 0 0 0 1.6em;
-        border-left: #4a4a4a 0.4em solid; }
+        position: relative;
+        margin: 2em 0;
+        padding: 12px 24px 12px 30px;
+        border-left: 4px solid #c2c6cc;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: #e6e6e6}
 
         blockquote p {
           margin: 0.8em 0; }
@@ -313,12 +315,10 @@ dl dt {
 
                     code, tt {
                       padding: 1px 3px;
-                      font-family: Inconsolata, monospace, sans-serif;
+                      font-family: "Fira Mono";
                       font-size: 0.85em;
                       white-space: pre-wrap;
-                      border: 1px solid #E3EDF3;
-                      background: #f7f7f9;
-                      color: #d14;
+                      background: #dbdfe4; 
                       border-radius: 2px; }
 /**
                       pre {
@@ -404,6 +404,53 @@ dl dt {
                                                     font-size: 12px; }
 **/
 
+#fb_new_comment {
+  padding-bottom: 50px; }
+  #fb_new_comment textarea {
+    border-radius: 5px;
+    height: 80px;
+    width: 98%;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid rgba(150, 150, 150, 0.5);
+    *border: 1px solid #a8a8a8;
+    line-height: 1.5; }
+    #fb_new_comment .comment_error {
+      color: red;
+      text-align: center;
+      display: block;
+      font-size: 0.8em;
+      padding-top: 1em; }
+      #fb_new_comment .c_button:hover {
+        background: #E60900;
+        color: #fff;
+        text-decoration: none; }
+        #fb_new_comment .c_button, #fb_new_comment #c_submit {
+          cursor: pointer;
+          font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+          font-size: 1em;
+          line-height: 1.3em;
+          letter-spacing: 1px;
+          border-radius: 5px;
+          padding: 5px 5px 2px 5px; }
+          #fb_new_comment .input_body {
+            margin-top: 10px; }
+            #fb_new_comment .input_body ul {
+              list-style: none;
+              padding: 5px 0;
+              margin: auto 0; }
+              #fb_new_comment .input_body ul li {
+                float: left;
+                margin-right: 2.2%;
+                *margin-right: 22px; }
+                #fb_new_comment .input_body ul li label {
+                  line-height: 1em; }
+                  #fb_new_comment .input_body ul li input {
+                    border-radius: 5px;
+                    border: 1px solid #ddd;
+                    padding: 5px;
+                    background: rgba(255, 255, 255, 0.5);
+                    margin: 0 0 10px 0; }
 
 #SwfStore_farbox_0 {
   height: 0;

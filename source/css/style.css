@@ -15,7 +15,7 @@ body {
 
 p {
   line-height: 1.9em;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -163,12 +163,12 @@ a:hover, a:active {
   height: 32px;
   border-radius: 300px;
 }
-.page-top .information .back_btn {
+.page-top .information .nav_right_btn {
   float: left;
   padding-top: 5px;
   margin-right: -10px;
 }
-.page-top .information .back_btn li {
+.page-top .information .nav_right_btn li {
   display: initial;
   padding-right: 40px;
 }
@@ -264,9 +264,7 @@ a:hover, a:active {
   letter-spacing: 1px;
   color: #5f5f5f;
 }
-.post .post-title a:hover {
-  text-decoration: underline;
-}
+
 .post .post-content a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -339,7 +337,6 @@ a:hover, a:active {
 .pagination {
   margin: 30px;
   padding: 0px 0 56px 0;
-  border-bottom: 1px solid #f2f2f2;
 }
 .pagination ul {
   list-style: none;
@@ -560,6 +557,7 @@ a.btn {
   font-weight: 400;
   font-style: normal;
   border-radius: 999em;
+  padding: 0.5em 1.25em;
 }
 
 .btn:hover {
@@ -698,3 +696,43 @@ a.btn {
   }
 }
 
+/*文章目录样式*/
+#toc_block {
+  width: 300px;
+  top: 61px;
+  right: 0px;
+  position: absolute;
+  background-color: #eeeeee;
+  display: none;
+}
+.toc {
+  padding-inline: 1em;
+}
+.toc, .toc ol{
+  list-style-type: none;
+}
+.toc-text {
+  font-size: 1.0rem;
+}
+.toc-link {
+  display: block;
+  padding: 5px 10px;
+}
+.toc-link:hover {
+  background-color:#e8e8e8;
+  border-radius: 5px;
+}
+
+/* 搜索页标签样式 */
+.tag-list {
+  list-style-type: none;
+  display: flex;
+  ;
+}
+.tag-list-item {
+  margin: 0.8rem;
+}
+
+#search-input:focus {
+  outline: none;
+}

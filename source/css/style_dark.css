@@ -15,7 +15,7 @@ body {
 
 p {
   line-height: 1.9em;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -563,13 +563,13 @@ a.btn {
   display: inline-block;
   position: relative;
   outline: 0px;
-  color: #464545;
+  color: #f8f8f863;
   background: transparent;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #464545;
+  border: 1px solid #f8f8f863;
   white-space: nowrap;
   font-weight: 400;
   font-style: normal;
@@ -713,7 +713,6 @@ a.btn {
 }
 .toc-text {
   font-size: 1.0rem;
-  color: #fff;
 }
 .toc-link {
   display: block;
@@ -732,4 +731,8 @@ a.btn {
 }
 .tag-list-item {
   margin: 0.8rem;
+}
+
+#search-input:focus {
+  outline: none;
 }

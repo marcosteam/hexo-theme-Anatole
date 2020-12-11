@@ -707,6 +707,8 @@ a.btn {
 }
 .toc {
   padding-inline: 1em;
+  max-height: 20rem;
+  overflow-y: auto;
 }
 .toc, .toc ol{
   list-style-type: none;
@@ -722,6 +724,13 @@ a.btn {
   background-color:#e8e8e8;
   border-radius: 5px;
 }
+.toc::-webkit-scrollbar-thumb {
+  border-radius: calc(0.5em/2);
+  background-color: #424242;
+}
+.toc::-webkit-scrollbar {
+  width: 0.5em;
+}
 
 /* 搜索页标签样式 */
 .tag-list {
@@ -735,4 +744,32 @@ a.btn {
 
 #search-input:focus {
   outline: none;
+}
+
+/* 表格样式 */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+table th {
+  font-weight: 600;
+}
+table td,table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+table tr {
+  padding: 6px 13px;
+  border: 1px solid #c6cbd1;
+}
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+table tr {
+  border-top: 1px solid #c6cbd1;
 }
